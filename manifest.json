@@ -1,0 +1,25 @@
+{
+  "name": "Conditional Body Background Changer",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs"],
+  "host_permissions": ["https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "URL Color Changer"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+	"icons": {
+		"16": "icons/16.png",
+		"32": "icons/32.png",
+		"48": "icons/48.png",
+		"128": "icons/128.png"
+	}
+}
