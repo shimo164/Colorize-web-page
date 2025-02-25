@@ -1,5 +1,6 @@
 {
-  "name": "Conditional Body Background Changer",
+  "name": "Colorize web page",
+  "description": "Automatically changes the element color based on specific URL matching rules",
   "version": "1.0",
   "manifest_version": 3,
   "permissions": ["tabs"],
@@ -8,7 +9,7 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "URL Color Changer"
+    "default_title": "Colorize web page"
   },
   "content_scripts": [
     {
